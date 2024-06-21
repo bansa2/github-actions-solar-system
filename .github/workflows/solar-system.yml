@@ -160,7 +160,6 @@ jobs:
           export IP=$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' solar-system-app )
           echo $IP
 
-
     
     dev-deploy:
       needs: docker
